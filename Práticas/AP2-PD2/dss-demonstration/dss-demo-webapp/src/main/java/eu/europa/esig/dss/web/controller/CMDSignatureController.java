@@ -156,6 +156,7 @@ public class CMDSignatureController {
 				signatureDocumentForm.getUserPin());
 
 		signatureDocumentForm.setProcessId(processId);
+		signatureDocumentForm.setEncryptionAlgorithm(certificateSignatureAlgorithm.getEncryptionAlgorithm());
 
 		// Request OTP from user
 		CMDOTPForm cmdOtpForm = new CMDOTPForm();
